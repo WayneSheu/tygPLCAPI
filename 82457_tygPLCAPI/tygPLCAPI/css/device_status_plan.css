@@ -1,0 +1,60 @@
+
+.scroll_rect
+{
+	overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.device_area
+{
+    width: 964px;
+    margin: 0 auto;
+	position: relative;
+}
+
+#device_bg
+{
+    
+    width: 964px;
+}
+
+.the_device 
+{
+    position: absolute;
+    width: 35px;
+    float: left;
+}
+
+.the_device_num
+{
+    background-color:#222;
+    text-align: center;
+}
+
+.the_device_content img
+{
+    opacity: 0.7;
+}
+.search-fac select{
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.search-txt{
+   margin-right: 1em; 
+}
+@media screen and (max-width: 767px){
+    .search-fac .w60{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .search-fac .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    .search-txt{
+        margin-bottom: 0.5em;
+        display: block; 
+}
+}

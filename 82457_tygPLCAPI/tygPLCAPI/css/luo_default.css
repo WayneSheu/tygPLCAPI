@@ -1,0 +1,186 @@
+body
+{
+     /*字體分別是Linux系統的文泉驛正黑，Mac的儷黑 Pro，Mac的黑體-繁(Mac OS 10.6 以後預設字型)，微软雅黑,微軟正黑體，英文，都沒有執行的字體*/
+    font-family: "WenQuanYi Zen Hei","Heiti TC", "LiHei Pro","Heiti TC","Microsoft JhengHei","Microsoft YaHei",Arial,sans-serif;
+    font-size: 16px;
+    color: #cccccc;
+    
+    background-position: center top;
+    background-size: 100%;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+a
+{
+    color: #fff ;
+    text-decoration:none;
+    /*display: inline-block;*/
+}
+a:hover
+{
+    color: #ccc;
+    text-decoration:none;
+    /*border-bottom: 10px solid #990000;*/
+}
+
+a:hover img
+{
+    opacity: 0.8;
+    /*border-bottom: 10px solid #990000;*/
+}
+
+.clr
+{
+    c​​lear:both
+}
+
+/* ##############  font */
+.fn_red { color:#ff0000; }
+.fn_yellow { color:#BD9902; }
+.fn_gray { color:#B4B4B5; }
+.fn_gray2 { color:#433F3F; }
+.fn_beige {color:#F5B696; }
+.fn_black {color:#000; }
+.fn_white {color:#fff; }
+
+.fn_16 { font-size: 16pt; }
+.fn_20 { font-size: 20pt; }
+.fn_22 { font-size: 22pt; }
+.fn_30 { font-size: 30pt; }
+.fn_bold { font-weight:bold; }
+
+.txt_center{text-align: center;}
+.txt_center_all{text-align: center;vertical-align:middle;}
+.txt_left{text-align: left;}
+.txt_right{text-align: right;}
+.txt_height_24{line-height: 24px;}
+.txt_height_28{line-height: 28px;}
+
+.txt_spac_3{letter-spacing: 3px;}
+.a_line_hidden{text-decoration:none;}
+/* font ##############  */
+
+
+
+/* ##############  location */
+.pa0 { padding: 0px; }
+.pa_left_10 { padding-left: 10px; }
+.pa_0_3 { padding: 0px 3px; }
+.pa_0_15 { padding: 0px 15px; }
+.pa_10{ padding: 10px;}
+.pa_20{ padding: 20px;}
+.pa_top_10{padding-top: 10px;}
+.pa_top_15{padding-top: 15px;}
+
+.ma_0_n3 { margin: 0px -3px; }
+.ma_0_10 { margin: 0px 10px; }
+.ma_10_0 { margin: 10px 0px; }
+.ma_20_0 { margin: 20px 0px; }
+
+.ma_25_0 { margin: 25px 0px; }
+.ma_40_0 { margin: 40px 0px; }
+
+.ma0 { margin: 0px; }
+.ma_10 { margin: 10px; }
+
+.ma_top_0 { margin-top: 0px; }
+.ma_top_7 { margin-top: 7px; }
+.ma_top_10 { margin-top: 10px; }
+.ma_top_20 { margin-top: 20px; }
+.ma_btm_6 { margin-bottom: 6px; }
+.ma_btm_10 { margin-bottom: 10px; }
+.ma_btm_15 { margin-bottom: 15px; }
+.ma_btm_20 { margin-bottom: 20px; }
+.ma_rit_6 { margin-right: 6px;}
+.ma_rit_10 { margin-right: 10px;}
+.ma_left_15{ margin-left: 15px;}
+
+.flo_r{ float: right; }
+.flo_l{ float: left; }
+/* location ##############  */
+
+
+
+/* ##############  size */
+.wid100 { width: 100%; }
+.wid80  { width: 80%; }
+.wid50  { width: 50%; }
+.wid30  { width: 30%; }
+.wid25  { width: 25%; }
+.wid10  { width: 10%; }
+
+.wid17  { width: 17%; }
+
+.hei1   { height: 1%; }
+/* size ##############  */
+
+
+
+/* ##############  bg color */
+.bc_red { background-color: #ff0000; }
+.bc_black { background-color: #000000; }
+.bc_gray { background-color: #B4B4B5; }
+.bc_gray2 { background-color: #777777; }
+.bc_gray3 {background-color: #c1c1c1;}
+.bc_yellow { background-color: #BD9902; }
+.bc_yellow2 { background-color: #fff857; }
+
+.bc_green{ background-color: #5cff30;}
+.bc_blue{ background-color: #3098ff;}
+.bc_blue2{ background-color: #6ebaff;}
+.bc_blue3{ background-color: #171c33;}
+
+.bc_tan{ background-color: #ff8430;}
+.bc_white{ background-color: #fff;}
+
+/* bg color ##############  */
+
+
+
+/* ##############  border */
+.bor_0{border: 0px;}
+.bor_1{border: 1px solid #505050;}
+.bor_r_1{border-right: 1px solid #fff;}
+.bor_r_2{border-right: 2px solid #999;}
+
+.bor_clr_blue{border-color: #6ebaff;}
+/* border ##############  */
+
+
+
+/* ##############  tools */
+.hr{width: 100%;padding: 0.5px 0px;}
+
+#scroll_top
+{
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    opacity:0;
+    cursor: pointer; 
+}
+
+.scroll_top_show
+{
+    -webkit-animation: scroll_top 2s 1 ease;-moz-animation: scroll_top 2s 1 ease;-o-animation: scroll_top 2s 1 ease;
+    -webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;-o-animation-fill-mode:forwards;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+@-webkit-keyframes scroll_top {0%{ -webkit-transform:translate(0px,0px); opacity:0.1;}  100%{ -webkit-transform:translate(0px,0px); opacity:1;} }                                 
+@-moz-keyframes scroll_top{0%{ -moz-transform:translate(0px,0px); opacity:0.1;}  100%{ -moz-transform:translate(0px,0px); opacity:1;} } 
+@-o-keyframes scroll_top {0%{ -o-transform:translate(0px,0px); opacity:0.1;}  100%{ -o-transform:translate(0px,0px); opacity:1;} }
+/* tools ##############  */

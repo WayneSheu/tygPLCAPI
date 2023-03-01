@@ -1,0 +1,117 @@
+
+
+
+
+#activity
+{
+    background-color:#433F3F;
+    padding: 20px 0px;
+    border-bottom: 4px solid #DCC951;
+}
+
+.loginpage-box
+{
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 0px auto;
+    border: 2px solid #a9a9a9;
+    margin-top: 15em;
+}
+
+.l-member-title
+{
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.loginform 
+{
+    width: 100%;
+}
+
+.input-group 
+{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.loginform .input-group-addon 
+{
+    border-radius: 0;
+    padding: 0 0px;
+    margin: 0;
+    background-color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    color: white;
+    font-size: 16px;
+    width: 30px;
+}
+
+.loginform .form-control {
+    border-radius: 0;
+    border: 1px solid #b3b3b3;
+    border-left: 0px;
+    width: 280px;
+}
+
+.l-btn-login 
+{
+    background-color: #c1272d;
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 0;
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.l-btn-login:hover, .l-btn-login:active, .l-btn-login:focus {
+    color: #fff;
+    background-color:#ff767c;
+}
+
+
+
+/*品牌主打*/
+.v1
+{
+    margin-top: 10px;
+    padding: 0px;
+    border-top:1px solid #BD9902;
+}
+
+/*<=767*/
+@media (max-width: 767px) 
+{
+    .v1 .left_area
+    {
+        margin-bottom: 6px;
+    }
+}
+
+/*優惠訊息*/
+.v2
+{
+    border:1px solid #B4B4B5;
+}
+
+.v2 p
+{
+    margin: 10px 0px;
+}
+
+
+.carousel-indicators{ bottom: -45px;}
+
+
+
+

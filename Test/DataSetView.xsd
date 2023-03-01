@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetView" targetNamespace="http://tempuri.org/DataSetView.xsd" xmlns:mstns="http://tempuri.org/DataSetView.xsd" xmlns="http://tempuri.org/DataSetView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetView" msprop:Generator_UserDSName="DataSetView">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Area" msprop:Generator_TableClassName="AreaDataTable" msprop:Generator_TableVarName="tableArea" msprop:Generator_TablePropName="Area" msprop:Generator_RowDeletingName="AreaRowDeleting" msprop:Generator_RowChangingName="AreaRowChanging" msprop:Generator_RowEvHandlerName="AreaRowChangeEventHandler" msprop:Generator_RowDeletedName="AreaRowDeleted" msprop:Generator_UserTableName="Area" msprop:Generator_RowChangedName="AreaRowChanged" msprop:Generator_RowEvArgName="AreaRowChangeEvent" msprop:Generator_RowClassName="AreaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AreaID" msprop:Generator_ColumnVarNameInTable="columnAreaID" msprop:Generator_ColumnPropNameInRow="AreaID" msprop:Generator_ColumnPropNameInTable="AreaIDColumn" msprop:Generator_UserColumnName="AreaID" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaName" msprop:Generator_ColumnVarNameInTable="columnAreaName" msprop:Generator_ColumnPropNameInRow="AreaName" msprop:Generator_ColumnPropNameInTable="AreaNameColumn" msprop:Generator_UserColumnName="AreaName" type="xs:string" minOccurs="0" />
+              <xs:element name="MasterPlcIP" msprop:Generator_ColumnVarNameInTable="columnMasterPlcIP" msprop:Generator_ColumnPropNameInRow="MasterPlcIP" msprop:Generator_ColumnPropNameInTable="MasterPlcIPColumn" msprop:Generator_UserColumnName="MasterPlcIP" type="xs:string" minOccurs="0" />
+              <xs:element name="MasterPlcPort" msprop:Generator_ColumnVarNameInTable="columnMasterPlcPort" msprop:Generator_ColumnPropNameInRow="MasterPlcPort" msprop:Generator_ColumnPropNameInTable="MasterPlcPortColumn" msprop:Generator_UserColumnName="MasterPlcPort" type="xs:int" minOccurs="0" />
+              <xs:element name="MasterPlcConnected" msprop:Generator_ColumnVarNameInTable="columnMasterPlcConnected" msprop:Generator_ColumnPropNameInRow="MasterPlcConnected" msprop:Generator_ColumnPropNameInTable="MasterPlcConnectedColumn" msprop:Generator_UserColumnName="MasterPlcConnected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PlcConnectedTime" msprop:Generator_ColumnVarNameInTable="columnPlcConnectedTime" msprop:Generator_ColumnPropNameInRow="PlcConnectedTime" msprop:Generator_ColumnPropNameInTable="PlcConnectedTimeColumn" msprop:Generator_UserColumnName="PlcConnectedTime" type="xs:string" minOccurs="0" />
+              <xs:element name="PlcDisconnectedTime" msprop:Generator_ColumnVarNameInTable="columnPlcDisconnectedTime" msprop:Generator_ColumnPropNameInRow="PlcDisconnectedTime" msprop:Generator_ColumnPropNameInTable="PlcDisconnectedTimeColumn" msprop:Generator_UserColumnName="PlcDisconnectedTime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Platform" msprop:Generator_TableClassName="PlatformDataTable" msprop:Generator_TableVarName="tablePlatform" msprop:Generator_TablePropName="Platform" msprop:Generator_RowDeletingName="PlatformRowDeleting" msprop:Generator_RowChangingName="PlatformRowChanging" msprop:Generator_RowEvHandlerName="PlatformRowChangeEventHandler" msprop:Generator_RowDeletedName="PlatformRowDeleted" msprop:Generator_UserTableName="Platform" msprop:Generator_RowChangedName="PlatformRowChanged" msprop:Generator_RowEvArgName="PlatformRowChangeEvent" msprop:Generator_RowClassName="PlatformRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlatformID" msprop:Generator_ColumnVarNameInTable="columnPlatformID" msprop:Generator_ColumnPropNameInRow="PlatformID" msprop:Generator_ColumnPropNameInTable="PlatformIDColumn" msprop:Generator_UserColumnName="PlatformID" type="xs:string" minOccurs="0" />
+              <xs:element name="PlatformName" msprop:Generator_ColumnVarNameInTable="columnPlatformName" msprop:Generator_ColumnPropNameInRow="PlatformName" msprop:Generator_ColumnPropNameInTable="PlatformNameColumn" msprop:Generator_UserColumnName="PlatformName" type="xs:string" minOccurs="0" />
+              <xs:element name="RemoteIOIP" msprop:Generator_ColumnVarNameInTable="columnRemoteIOIP" msprop:Generator_ColumnPropNameInRow="RemoteIOIP" msprop:Generator_ColumnPropNameInTable="RemoteIOIPColumn" msprop:Generator_UserColumnName="RemoteIOIP" type="xs:string" minOccurs="0" />
+              <xs:element name="RemoteIOPort" msprop:Generator_ColumnVarNameInTable="columnRemoteIOPort" msprop:Generator_ColumnPropNameInRow="RemoteIOPort" msprop:Generator_ColumnPropNameInTable="RemoteIOPortColumn" msprop:Generator_UserColumnName="RemoteIOPort" type="xs:int" minOccurs="0" />
+              <xs:element name="RemoteIOConnected" msprop:Generator_ColumnVarNameInTable="columnRemoteIOConnected" msprop:Generator_ColumnPropNameInRow="RemoteIOConnected" msprop:Generator_ColumnPropNameInTable="RemoteIOConnectedColumn" msprop:Generator_UserColumnName="RemoteIOConnected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IOConnectedTime" msprop:Generator_ColumnVarNameInTable="columnIOConnectedTime" msprop:Generator_ColumnPropNameInRow="IOConnectedTime" msprop:Generator_ColumnPropNameInTable="IOConnectedTimeColumn" msprop:Generator_UserColumnName="IOConnectedTime" type="xs:string" minOccurs="0" />
+              <xs:element name="IODisconnectedTime" msprop:Generator_ColumnVarNameInTable="columnIODisconnectedTime" msprop:Generator_ColumnPropNameInRow="IODisconnectedTime" msprop:Generator_ColumnPropNameInTable="IODisconnectedTimeColumn" msprop:Generator_UserColumnName="IODisconnectedTime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Machine" msprop:Generator_TableClassName="MachineDataTable" msprop:Generator_TableVarName="tableMachine" msprop:Generator_TablePropName="Machine" msprop:Generator_RowDeletingName="MachineRowDeleting" msprop:Generator_RowChangingName="MachineRowChanging" msprop:Generator_RowEvHandlerName="MachineRowChangeEventHandler" msprop:Generator_RowDeletedName="MachineRowDeleted" msprop:Generator_UserTableName="Machine" msprop:Generator_RowChangedName="MachineRowChanged" msprop:Generator_RowEvArgName="MachineRowChangeEvent" msprop:Generator_RowClassName="MachineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MachineID" msprop:Generator_ColumnVarNameInTable="columnMachineID" msprop:Generator_ColumnPropNameInRow="MachineID" msprop:Generator_ColumnPropNameInTable="MachineIDColumn" msprop:Generator_UserColumnName="MachineID" type="xs:string" minOccurs="0" />
+              <xs:element name="PlcSlaveNo" msprop:Generator_ColumnVarNameInTable="columnPlcSlaveNo" msprop:Generator_ColumnPropNameInRow="PlcSlaveNo" msprop:Generator_ColumnPropNameInTable="PlcSlaveNoColumn" msprop:Generator_UserColumnName="PlcSlaveNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PlatformID" msprop:Generator_ColumnVarNameInTable="columnPlatformID" msprop:Generator_ColumnPropNameInRow="PlatformID" msprop:Generator_ColumnPropNameInTable="PlatformIDColumn" msprop:Generator_UserColumnName="PlatformID" type="xs:string" minOccurs="0" />
+              <xs:element name="IOChannelNo" msprop:Generator_ColumnVarNameInTable="columnIOChannelNo" msprop:Generator_ColumnPropNameInRow="IOChannelNo" msprop:Generator_ColumnPropNameInTable="IOChannelNoColumn" msprop:Generator_UserColumnName="IOChannelNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PlcConnected" msprop:Generator_ColumnVarNameInTable="columnPlcConnected" msprop:Generator_ColumnPropNameInRow="PlcConnected" msprop:Generator_ColumnPropNameInTable="PlcConnectedColumn" msprop:Generator_UserColumnName="PlcConnected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IOConnected" msprop:Generator_ColumnVarNameInTable="columnIOConnected" msprop:Generator_ColumnPropNameInRow="IOConnected" msprop:Generator_ColumnPropNameInTable="IOConnectedColumn" msprop:Generator_UserColumnName="IOConnected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="RunStatus" msprop:Generator_ColumnVarNameInTable="columnRunStatus" msprop:Generator_ColumnPropNameInRow="RunStatus" msprop:Generator_ColumnPropNameInTable="RunStatusColumn" msprop:Generator_UserColumnName="RunStatus" type="xs:int" minOccurs="0" />
+              <xs:element name="ForbidMotor" msprop:Generator_ColumnVarNameInTable="columnForbidMotor" msprop:Generator_ColumnPropNameInRow="ForbidMotor" msprop:Generator_ColumnPropNameInTable="ForbidMotorColumn" msprop:Generator_UserColumnName="ForbidMotor" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LampStatus" msprop:Generator_ColumnVarNameInTable="columnLampStatus" msprop:Generator_ColumnPropNameInRow="LampStatus" msprop:Generator_ColumnPropNameInTable="LampStatusColumn" msprop:Generator_UserColumnName="LampStatus" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkOrderNo" msprop:Generator_ColumnVarNameInTable="columnWorkOrderNo" msprop:Generator_ColumnPropNameInRow="WorkOrderNo" msprop:Generator_ColumnPropNameInTable="WorkOrderNoColumn" msprop:Generator_UserColumnName="WorkOrderNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ProdQty" msprop:Generator_ColumnVarNameInTable="columnProdQty" msprop:Generator_ColumnPropNameInRow="ProdQty" msprop:Generator_ColumnPropNameInTable="ProdQtyColumn" msprop:Generator_UserColumnName="ProdQty" type="xs:int" minOccurs="0" />
+              <xs:element name="HoleID" msprop:Generator_ColumnVarNameInTable="columnHoleID" msprop:Generator_ColumnPropNameInRow="HoleID" msprop:Generator_ColumnPropNameInTable="HoleIDColumn" msprop:Generator_UserColumnName="HoleID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

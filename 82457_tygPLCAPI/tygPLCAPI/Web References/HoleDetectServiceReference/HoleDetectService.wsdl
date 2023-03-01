@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckAreaReflash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lastReflash" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAreaReflashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckAreaReflashResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPlatformReflash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lastReflash" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PlatformID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPlatformReflashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckPlatformReflashResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckMachineReflash">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lastReflash" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckMachineReflashResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckMachineReflashResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetkAreaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetkAreaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetkAreaDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlatformData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="platformID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlatformDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlatformDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMachineData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMachineDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMachineDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMaterialData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="platformID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mpileSort" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mpileSerial" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="mRatio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetMaterialDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMaterialDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMaterialData_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="platformID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mholeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mholeSerial" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="mRatio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMaterialData_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMaterialData_NewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateMaterialData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="platformID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldMpileSerial" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldMRatio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newMpileSerial" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="newMRatio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateMaterialDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateMaterialDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetTestMode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="factoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areaID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="testMode" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetTestModeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetTestModeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RestartDAQ">
+        <s:complexType />
+      </s:element>
+      <s:element name="RestartDAQResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckAreaReflashSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAreaReflash" />
+  </wsdl:message>
+  <wsdl:message name="CheckAreaReflashSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAreaReflashResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckPlatformReflashSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckPlatformReflash" />
+  </wsdl:message>
+  <wsdl:message name="CheckPlatformReflashSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckPlatformReflashResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckMachineReflashSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckMachineReflash" />
+  </wsdl:message>
+  <wsdl:message name="CheckMachineReflashSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckMachineReflashResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetkAreaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetkAreaData" />
+  </wsdl:message>
+  <wsdl:message name="GetkAreaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetkAreaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlatformDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlatformData" />
+  </wsdl:message>
+  <wsdl:message name="GetPlatformDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlatformDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMachineData" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMachineDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetMaterialDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMaterialData" />
+  </wsdl:message>
+  <wsdl:message name="SetMaterialDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMaterialDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetMaterialData_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMaterialData_New" />
+  </wsdl:message>
+  <wsdl:message name="SetMaterialData_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMaterialData_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMaterialDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateMaterialData" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMaterialDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateMaterialDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetTestModeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetTestMode" />
+  </wsdl:message>
+  <wsdl:message name="SetTestModeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetTestModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="RestartDAQSoapIn">
+    <wsdl:part name="parameters" element="tns:RestartDAQ" />
+  </wsdl:message>
+  <wsdl:message name="RestartDAQSoapOut">
+    <wsdl:part name="parameters" element="tns:RestartDAQResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HoleDetectServiceSoap">
+    <wsdl:operation name="CheckAreaReflash">
+      <wsdl:input message="tns:CheckAreaReflashSoapIn" />
+      <wsdl:output message="tns:CheckAreaReflashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPlatformReflash">
+      <wsdl:input message="tns:CheckPlatformReflashSoapIn" />
+      <wsdl:output message="tns:CheckPlatformReflashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMachineReflash">
+      <wsdl:input message="tns:CheckMachineReflashSoapIn" />
+      <wsdl:output message="tns:CheckMachineReflashSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetkAreaData">
+      <wsdl:input message="tns:GetkAreaDataSoapIn" />
+      <wsdl:output message="tns:GetkAreaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlatformData">
+      <wsdl:input message="tns:GetPlatformDataSoapIn" />
+      <wsdl:output message="tns:GetPlatformDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineData">
+      <wsdl:input message="tns:GetMachineDataSoapIn" />
+      <wsdl:output message="tns:GetMachineDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMaterialData">
+      <wsdl:input message="tns:SetMaterialDataSoapIn" />
+      <wsdl:output message="tns:SetMaterialDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMaterialData_New">
+      <wsdl:input message="tns:SetMaterialData_NewSoapIn" />
+      <wsdl:output message="tns:SetMaterialData_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMaterialData">
+      <wsdl:input message="tns:UpdateMaterialDataSoapIn" />
+      <wsdl:output message="tns:UpdateMaterialDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetTestMode">
+      <wsdl:input message="tns:SetTestModeSoapIn" />
+      <wsdl:output message="tns:SetTestModeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RestartDAQ">
+      <wsdl:input message="tns:RestartDAQSoapIn" />
+      <wsdl:output message="tns:RestartDAQSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HoleDetectServiceSoap" type="tns:HoleDetectServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckAreaReflash">
+      <soap:operation soapAction="http://tempuri.org/CheckAreaReflash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPlatformReflash">
+      <soap:operation soapAction="http://tempuri.org/CheckPlatformReflash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMachineReflash">
+      <soap:operation soapAction="http://tempuri.org/CheckMachineReflash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetkAreaData">
+      <soap:operation soapAction="http://tempuri.org/GetkAreaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlatformData">
+      <soap:operation soapAction="http://tempuri.org/GetPlatformData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineData">
+      <soap:operation soapAction="http://tempuri.org/GetMachineData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMaterialData">
+      <soap:operation soapAction="http://tempuri.org/SetMaterialData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMaterialData_New">
+      <soap:operation soapAction="http://tempuri.org/SetMaterialData_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMaterialData">
+      <soap:operation soapAction="http://tempuri.org/UpdateMaterialData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTestMode">
+      <soap:operation soapAction="http://tempuri.org/SetTestMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestartDAQ">
+      <soap:operation soapAction="http://tempuri.org/RestartDAQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HoleDetectServiceSoap12" type="tns:HoleDetectServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckAreaReflash">
+      <soap12:operation soapAction="http://tempuri.org/CheckAreaReflash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPlatformReflash">
+      <soap12:operation soapAction="http://tempuri.org/CheckPlatformReflash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMachineReflash">
+      <soap12:operation soapAction="http://tempuri.org/CheckMachineReflash" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetkAreaData">
+      <soap12:operation soapAction="http://tempuri.org/GetkAreaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlatformData">
+      <soap12:operation soapAction="http://tempuri.org/GetPlatformData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineData">
+      <soap12:operation soapAction="http://tempuri.org/GetMachineData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMaterialData">
+      <soap12:operation soapAction="http://tempuri.org/SetMaterialData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMaterialData_New">
+      <soap12:operation soapAction="http://tempuri.org/SetMaterialData_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMaterialData">
+      <soap12:operation soapAction="http://tempuri.org/UpdateMaterialData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTestMode">
+      <soap12:operation soapAction="http://tempuri.org/SetTestMode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestartDAQ">
+      <soap12:operation soapAction="http://tempuri.org/RestartDAQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HoleDetectService">
+    <wsdl:port name="HoleDetectServiceSoap" binding="tns:HoleDetectServiceSoap">
+      <soap:address location="http://localhost:2509/HoleDetectService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HoleDetectServiceSoap12" binding="tns:HoleDetectServiceSoap12">
+      <soap12:address location="http://localhost:2509/HoleDetectService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

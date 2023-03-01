@@ -1,0 +1,148 @@
+#head
+{
+    background-color: #000;
+    border-bottom: 4px solid #DCC951;
+    background-repeat:no-repeat;
+    background-position:center;
+    min-height: 75px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    /*border-width: 1px;
+    border-style: solid;
+    padding: 15px;*/
+    font-size: 16px;
+    
+}
+
+#content
+{
+    background-color: #000;
+    background-image: url(../image/plcbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position:top center;
+    padding: 50px 0px;
+    min-height: 850px;
+}
+
+
+
+#foot
+{
+   background-color: #000;
+}
+
+#sys_name
+{
+    font-size: 20pt;
+}
+
+#head .status_list span {
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    min-width: 85px;
+    display: inline-block;
+}
+
+/* <=610 */
+@media (max-width: 610px) 
+{
+    /*#sys_name
+    {
+        font-size: 16pt;
+    }*/
+}
+@media screen and (max-width: 490px) {
+}
+#head .status_list span {
+    padding: 8px 0px;
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    min-width: 85px;
+    display: inline-block;
+}
+
+/* <=380 */
+@media (max-width: 380px) 
+{
+    #content
+    {
+        min-height: 450px;
+    }
+    
+    #foot
+    {
+       font-size: 8pt;
+    }
+}
+
+
+.input_style1
+{
+    background-color: #46acff;
+    height: 50px;
+    width: 100%;
+    color: #000;
+    font-size: 14pt;
+    float: left;
+    
+}
+
+.input_style2
+{
+    background-color: #d9534f;
+    height: 50px;
+    width: 100%;
+    color: #000;
+    font-size: 14pt;
+    float: right;
+
+}
+.input_style3{
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    height: 50px;
+    width: 100%;
+    color: #000;
+    font-size: 14pt;
+    float: right;
+}
+
+.device_red { background-color: #ff0000; }
+.device_green {background-color: #5cff30;}
+.device_blue {background-color: #3098ff;}
+.device_tan {background-color: #ff8430;}
+.device_white {background-color: #fff;}
+.device_gray { background-color: #777777;}
+.device_yellow {background-color: #fff857;}
+
+/*紅星星*/
+.red-star:before{
+	content:"*";
+	color: #ff0000;
+	
+}
+
+.user{
+    background-color: #4183CC;
+    padding: 10px;
+    border-radius: 3px
+}
+.login-user{
+    color: #68ACD0;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 625px){
+    #head .sys_name, #head h1{
+        display: none;
+    }
+}

@@ -1,0 +1,194 @@
+
+#head
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    /*border-width: 1px;
+    border-style: solid;
+    padding: 15px;*/
+    font-size: 16px;
+}
+
+#head p
+{
+    /*margin: 10px 0px;*/
+}
+
+
+#head .status_list span
+{
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    min-width: 85px;
+    display: inline-block;
+}
+
+.v1
+{
+   margin: 15em 10px 0px 10px; 
+}
+
+.v2
+{
+    /*border:1px solid #B4B4B5;*/
+    color: #000;
+}
+
+.v2 .area
+{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.v2 .area .sub_area
+{
+    min-height: 100px;
+    min-width: 100px;
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 26px;
+    
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
+.v2 .area p
+{
+    float: left;
+    width: 100%;
+}
+
+
+.v2 .device_white
+{
+    padding: 10px;
+    height: 110px;
+}
+
+/*4/26*/
+/*device_status_detail*/
+.red-star:before{
+	content:"*";
+	color: #ff0000;
+	
+}
+#search-form .btn{
+	width: 50%;
+}
+/*4/26 end*/
+
+.panel-btn {
+    color: #000000;
+    text-decoration: none;
+
+}
+.panel-btn:hover {
+    color:  #999999;
+    
+}
+#search-form .yes-btn{
+    background-color: #46acff;
+}
+#search-form .clear-btn{
+    background-color: #d9534f;
+}
+/*4/26*/
+@media screen and (max-width: 767px){
+	#search-form .btn{
+	width: 100%;
+}
+	#search-form #reset{
+	margin-bottom: 1em;
+}
+	/*4/27*/
+	.v1{
+	margin-top: 250px;
+}
+	.btn-detail{
+		margin-bottom: 1em;
+	}
+	#search-form .ta-r{
+		text-align: left;
+	}
+	/*4/27 end*/
+    .panel-title{
+        text-align: center;
+    }
+}
+/*4/26 end*/
+
+/*  <=766px */
+/*@media (max-width: 766px)
+{
+    .v1
+    {
+       margin-top: 240px; 
+    }
+}*/
+
+@media screen and (max-width: 752px){
+	.v1
+    {
+       margin-top: 300px; 
+    }
+}
+/*  <=615px */
+@media (max-width: 615px)
+{
+    .v1
+    {
+       margin-top: 280px; 
+    }
+}
+
+/*  <=550px */
+@media (max-width: 550px)
+{
+    .v2 .device_white
+    {
+        font-size: 12pt;
+    }
+}
+
+/*  <=490px */
+@media screen and (max-width: 490px)
+{
+    #head .status_list span
+    {
+        padding: 8px 0px;
+        border-radius: 5px;
+        margin-left: 6px;
+        margin-bottom: 10px;
+        min-width: 85px;
+        display: inline-block;
+    }
+    
+    /*4/27*/
+	.v1
+    {  
+       margin-top: 330px; 
+    }
+	/*4/27 end*/
+}
+
+@media screen and (max-width: 467px)
+{
+	.v1
+    {  
+       margin-top: 400px; 
+    }
+}
+
+@media screen and (max-width: 625px){
+    .v1{
+        margin-top: 12em;
+    }
+}
+

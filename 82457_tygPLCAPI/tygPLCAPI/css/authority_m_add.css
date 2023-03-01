@@ -1,0 +1,156 @@
+
+.v1
+{
+    color: #000;
+    /*border:1px solid #B4B4B5;*/
+    margin-top: 15em;
+}
+
+.v1 #myTab
+{
+    border-bottom: 0px;
+}
+
+.v1 #myTab a
+{
+    color: #000;
+    border: 1px solid #505050;
+    font-size: 1.2em;
+}
+
+.v1 #myTab a:hover
+{
+    color: #f7f7f7;
+    background-color: #525252;
+    border: 1px solid #000; 
+}
+
+.v1 #myTab .active a
+{
+    color: #f7f7f7;
+    background-color: #525252;
+    border: 1px solid #000;
+    font-size: 1.2em; 
+}
+
+.v1 .tab-content
+{
+    border: 1px solid #505050;
+    min-height: 400px;
+    padding: 30px;
+    background-color: #e0e0e0;
+}
+
+
+.v1 .tab-content .title_lvl1
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.v1 .tab-content .title_lvl2
+{
+    font-size: 14pt;
+    text-align: right;
+    padding: 10px 0px;
+}
+
+.v1 .tab-content .radio-group
+{
+    border: 1px solid #505050;
+    border-radius: 4px;
+    padding: 10px; 
+}
+
+
+.v1 .tab-content .radio-inline
+{
+    margin: 0px 30px;
+    /*vertical-align:top;*/
+}
+
+/* <=991 */
+@media (max-width: 991px) 
+{
+    .v1 .tab-content .title_lvl2
+    {
+        font-size: 12pt;
+    }
+}
+
+/* <=767 */
+@media (max-width: 767px) 
+{
+    .v1 .tab-content .title_lvl2
+    {
+        text-align: left;
+    }
+}
+
+/* <=650 */
+@media (max-width: 650px) 
+{
+    .v1 .tab-content .title_lvl1
+    {
+        font-size: 1.25em;
+    }
+}
+
+
+.table_ctrl 
+{
+    min-height: 50px;
+}
+
+.my_table
+{
+    color: #272727;
+    font-weight: bold;
+}
+
+.my_table td
+{
+    border: 1px #a0a0a0 solid;
+}
+
+/* >500 <=767px */
+@media (min-width: 501px) and (max-width: 767px)
+{
+    .my_table
+    {
+        width: 99%;
+    }
+}
+
+/* <=650 */
+@media (max-width: 650px) 
+{
+    .my_table td
+    {
+        font-size: 10pt;
+    }
+}
+
+
+
+.my_table thead
+{
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+.my_table thead th
+{
+    text-align: center;
+}
+
+.my_table tbody td
+{
+    text-align: center;
+    vertical-align:middle;
+}
+@media screen and (max-width: 625px){
+    .v1{
+        margin-top: 12em;
+    }
+}

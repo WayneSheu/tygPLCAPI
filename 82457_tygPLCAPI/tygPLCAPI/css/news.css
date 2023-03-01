@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*搜尋工具*/
+#search-form .btn{
+	width: 50%;
+}
+/*搜尋工具 end*/
+
+.table>thead>tr>th {
+    vertical-align: middle;
+    
+}
+/*狀態顏色說明*/
+#head .status_list span {
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    min-width: 85px;
+    display: inline-block;
+}
+/*狀態顏色說明 end*/
+
+#head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    /*padding: 15px;*/
+    font-size: 16px;
+}
+
+/*與head間距*/
+/*.main-title{
+    margin-top: 10em;
+}*/
+.panel-btn {
+    color: #000000;
+    text-decoration: none;
+    }
+.panel-btn:hover {
+    color: #999999;
+}
+#search-form .yes-btn {
+    background-color: #46acff;
+}
+#search-form .clear-btn {
+    background-color: #d9534f;
+}
+
+/*@media screen and (max-width: 750px){
+
+    .main-title{
+    margin-top: 12em;
+}
+
+}*/
+/*@media screen and (max-width: 465px){
+    .main-title{
+    margin-top: 14em;
+}
+
+}*/
+/*與head間距 結束*/
+
+@media screen and (max-width: 767px){
+    #search-form .btn{
+    width: 100%;
+}
+    #search-form #reset{
+    margin-bottom: 1em;
+}
+  
+    #search-form .ta-r{
+        text-align: left;
+    }
+   
+}

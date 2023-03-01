@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\21973\AppData\Local\Temp\tmp2A84.tmp.cadir\bin\App_Web_0meb5fzt.dll">
+   <Modules>
+    <Module Name="app_web_0meb5fzt.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Default.aspx.cs" Line="55">方法 '_Default.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 55</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Default.aspx.cs" Line="36">傳遞給 '_Default.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AreaList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="AreaMod.aspx.cs" Line="42">方法 'AreaList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="AreaMod.aspx.cs" Line="27">傳遞給 'AreaList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GroupList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupList.aspx.cs" Line="42">方法 'GroupList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupList.aspx.cs" Line="27">傳遞給 'GroupList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GroupMember" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupSet.aspx.cs" Line="42">方法 'GroupMember.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupSet.aspx.cs" Line="27">傳遞給 'GroupMember.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GroupMod" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupMod.aspx.cs" Line="42">方法 'GroupMod.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupMod.aspx.cs" Line="27">傳遞給 'GroupMod.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="History" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="History.aspx.cs" Line="42">方法 'History.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="History.aspx.cs" Line="27">傳遞給 'History.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MachineList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="MachineList.aspx.cs" Line="42">方法 'MachineList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="MachineList.aspx.cs" Line="27">傳遞給 'MachineList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PileList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PileList.aspx.cs" Line="42">方法 'PileList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PileList.aspx.cs" Line="27">傳遞給 'PileList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlatformList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformMod.aspx.cs" Line="42">方法 'PlatformList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformMod.aspx.cs" Line="27">傳遞給 'PlatformList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\21973\AppData\Local\Temp\tmp2A84.tmp.cadir\bin\App_Web_fdrtpjpu.dll">
+   <Modules>
+    <Module Name="app_web_fdrtpjpu.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="FactoryList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="FactoryMod.aspx.cs" Line="42">方法 'FactoryList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="FactoryMod.aspx.cs" Line="27">傳遞給 'FactoryList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GroupAdd" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupAdd.aspx.cs" Line="42">方法 'GroupAdd.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupAdd.aspx.cs" Line="27">傳遞給 'GroupAdd.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HistoryInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="HistoryInfo.aspx.cs" Line="42">方法 'HistoryInfo.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="HistoryInfo.aspx.cs" Line="27">傳遞給 'HistoryInfo.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PileSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PileSet.aspx.cs" Line="42">方法 'PileSet.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PileSet.aspx.cs" Line="27">傳遞給 'PileSet.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlatformList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformAdd.aspx.cs" Line="42">方法 'PlatformList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformAdd.aspx.cs" Line="27">傳遞給 'PlatformList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\21973\AppData\Local\Temp\tmp2A84.tmp.cadir\bin\App_Web_kjeckqpe.dll">
+   <Modules>
+    <Module Name="app_web_kjeckqpe.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="FactoryList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="FactoryList.aspx.cs" Line="42">方法 'FactoryList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="FactoryList.aspx.cs" Line="27">傳遞給 'FactoryList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MachineList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="MachineMod.aspx.cs" Line="42">方法 'MachineList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="MachineMod.aspx.cs" Line="27">傳遞給 'MachineList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\21973\AppData\Local\Temp\tmp2A84.tmp.cadir\bin\App_Web_s2ljfpqk.dll">
+   <Modules>
+    <Module Name="app_web_s2ljfpqk.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="FactoryList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="FactoryAdd.aspx.cs" Line="42">方法 'FactoryList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="FactoryAdd.aspx.cs" Line="27">傳遞給 'FactoryList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GroupSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupMember.aspx.cs" Line="42">方法 'GroupSet.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="GroupMember.aspx.cs" Line="27">傳遞給 'GroupSet.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\21973\AppData\Local\Temp\tmp2A84.tmp.cadir\bin\App_Web_tyajxb3s.dll">
+   <Modules>
+    <Module Name="app_web_tyajxb3s.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="AreaList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="AreaAdd.aspx.cs" Line="42">方法 'AreaList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="AreaAdd.aspx.cs" Line="27">傳遞給 'AreaList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Default2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="StatusDetail.aspx.cs" Line="42">方法 'Default2.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="StatusDetail.aspx.cs" Line="27">傳遞給 'Default2.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MachineList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="MachineAdd.aspx.cs" Line="42">方法 'MachineList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="MachineAdd.aspx.cs" Line="27">傳遞給 'MachineList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Menu" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Menu.aspx.cs" Line="53">方法 'Menu.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 53</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Menu.aspx.cs" Line="35">傳遞給 'Menu.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="News" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="News.aspx.cs" Line="42">方法 'News.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="News.aspx.cs" Line="27">傳遞給 'News.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PileHeap" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PileHeap.aspx.cs" Line="44">方法 'PileHeap.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 44</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PileHeap.aspx.cs" Line="28">傳遞給 'PileHeap.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlatformList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformPile.aspx.cs" Line="42">方法 'PlatformList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformPile.aspx.cs" Line="27">傳遞給 'PlatformList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlatformSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformSet.aspx.cs" Line="42">方法 'PlatformSet.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformSet.aspx.cs" Line="27">傳遞給 'PlatformSet.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlatformState" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformState.aspx.cs" Line="42">方法 'PlatformState.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformState.aspx.cs" Line="27">傳遞給 'PlatformState.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StatusInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="StatusInfo.aspx.cs" Line="42">方法 'StatusInfo.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="StatusInfo.aspx.cs" Line="27">傳遞給 'StatusInfo.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StatusPlan" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="StatusPlan.aspx.cs" Line="42">方法 'StatusPlan.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="StatusPlan.aspx.cs" Line="27">傳遞給 'StatusPlan.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\21973\AppData\Local\Temp\tmp2A84.tmp.cadir\bin\App_Web_u1p4qdfg.dll">
+   <Modules>
+    <Module Name="app_web_u1p4qdfg.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Default.aspx.cs" Line="55">方法 '_Default.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 55</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Default.aspx.cs" Line="36">傳遞給 '_Default.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AreaList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="AreaList.aspx.cs" Line="42">方法 'AreaList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="AreaList.aspx.cs" Line="27">傳遞給 'AreaList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlatformList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformList.aspx.cs" Line="42">方法 'PlatformList.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="PlatformList.aspx.cs" Line="27">傳遞給 'PlatformList.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Status" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Status.aspx.cs" Line="42">方法 'Status.Page_Load(object, EventArgs)' 中可以多次處置物件 'conn'。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Issue>
+            </Message>
+            <Message TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-12-06 06:05:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\21973\Desktop\PMI Code\tyg_web" File="Status.aspx.cs" Line="27">傳遞給 'Status.Page_Load(object, EventArgs)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查詢字串可能包含下列變數 'this.Session["username"]'。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="不要多次處置物件的 Dispose 方法" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次處置物件的 Dispose 方法</Name>
+   <Description>正確實作的 Dispose 方法即使呼叫多次，也不會擲回例外狀況。但不保證一定如此，為避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。</Description>
+   <Resolution Name="Default">方法 {1} 中可以多次處置物件 {0}。若要避免產生 System.ObjectDisposedException，您不應該對物件呼叫多次 Dispose。: Lines: 42</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="必須檢閱 SQL 查詢中是否有安全性弱點" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>必須檢閱 SQL 查詢中是否有安全性弱點</Name>
+   <Description>根據使用者輸入建構而成的 SQL 命令字串容易受到 SQL 插入式攻擊的威脅。Microsoft SQL Server 和其他資料庫伺服器支援預存程序和參數化 SQL 查詢，可減少插入式攻擊的風險。</Description>
+   <Resolution Name="WithNonLiterals">傳遞給 {1} 中的 {0} 的查詢字串可能包含下列變數 {2}。如果這其中任何變數來自使用者輸入，請考慮使用預存程序或參數化 SQL 查詢，而不要用字串串連的方式建立查詢。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">分類</String>
+  <String Key="Certainty">確實性</String>
+  <String Key="CollapseAll">全部摺疊</String>
+  <String Key="CheckId">檢查 ID</String>
+  <String Key="Error">錯誤</String>
+  <String Key="Errors">錯誤</String>
+  <String Key="ExpandAll">全部展開</String>
+  <String Key="Help">說明</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">訊息</String>
+  <String Key="LocationNotStoredInPdb">[位置未儲存在 PDB]</String>
+  <String Key="Project">專案</String>
+  <String Key="Resolution">解析度</String>
+  <String Key="Rule">規則</String>
+  <String Key="RuleFile">規則檔</String>
+  <String Key="RuleDescription">規則說明</String>
+  <String Key="Source">來源</String>
+  <String Key="Status">狀態</String>
+  <String Key="Target">目標</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">程式碼分析報告</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/*mat_station_edit*/
+#mat_station_edit, #mat_station_edit .btn{
+	font-size:1.2em;
+}
+#mat_station_edit .row{
+	margin-bottom: 1em;
+}
+#mat_station_edit{
+	background-color: #ffffff;
+}
+#form-bg{
+	background-color: #ffffff;
+	
+}
+.red-star:before{
+	content:"*";
+	color: #F00;
+	
+}
+/*select{
+	margin-bottom: 1em;
+}*/
+@media screen and (max-width:767px){
+	#mat_station_edit .ta-r{
+		text-align: left;
+	}
+	#mat_station_edit .item-title, #mat_station_edit select{
+		margin-bottom: 10px;
+	}
+	#mat_station_edit .w40{
+		width: 100%;
+	}
+	#mat_station_edit #submit{
+		margin-bottom: 1em;
+	} 
+}

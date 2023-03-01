@@ -1,0 +1,38 @@
+
+
+/*優惠訊息*/
+.v1
+{
+    /*border:1px solid #B4B4B5;*/
+    /*border-radius: 4px;*/
+    /*border-color: #6ebaff;*/
+    margin-top: 15em;
+    padding: 10px;
+}
+
+.v1 p
+{
+    margin: 10px 0px;
+}
+
+.v1 a p
+{
+    font-size: 34px;
+    text-align: center;
+}
+
+
+.carousel-indicators{ bottom: -45px;}
+
+@media screen and (max-width: 530px){
+    .v1{
+        margin-top: 12em;
+    }
+}
+@media screen and (max-width: 435px){
+    .menu-btn .col-xs-4{
+        width: 50%;
+    }
+}
+
+

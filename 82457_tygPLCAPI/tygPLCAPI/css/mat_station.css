@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*mat_station 供料站*/
+.v1{
+	margin: 15em 10px 0px 10px;
+}
+#head{
+	/*position: inherit !important;*/
+	
+}
+.station .row{
+	margin-bottom: 2em;
+}
+.two .row, .three .row{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+.first .w100{
+	padding-right:15px;
+	padding-left: 15px;
+}
+.station .col-md-3, .station .col-md-4{
+	position: relative;
+}
+.station span{
+	font-size: 0.8em;
+	z-index: 1000;
+	position: absolute;
+	top: 40%;
+	left: 33%;
+	color: #ffffff;
+	}
+.panel-btn {
+    color: #000000;
+    text-decoration: none;
+    }
+.panel-btn:hover {
+    color: #999999;
+}
+#search-form .yes-btn {
+    background-color: #46acff;
+}
+#search-form .clear-btn {
+    background-color: #d9534f;
+}
+@media screen and (max-width: 767px){
+	.station span{
+		font-size: 1.5em;
+	}
+    .panel-title {
+    text-align: left;
+}
+}
+@media screen and (max-width: 650px){
+	.station span{
+		font-size: 1.3em;
+	}
+}
+@media screen and (max-width: 550px){
+	.station span{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 450px){
+	.station span{
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 625px){
+    .v1{
+        margin-top: 12em;
+    }
+}
